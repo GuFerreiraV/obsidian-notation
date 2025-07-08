@@ -1,0 +1,1 @@
+- A pilha é uma das estruturas
