@@ -61,3 +61,33 @@
 }
 
 ```
+
+---
+## Observações
+- No Java, já existe uma classe que faz a implementação de uma pilha, chama-se **Stack**
+- *java.util.Stack*
+```java
+	import java.util.Stack;
+
+public class StackExample {
+    public static void main(String[] args) {
+        Stack<String> minhaPilha = new Stack<>();
+
+        minhaPilha.push("Primeiro");
+        minhaPilha.push("Segundo");
+        minhaPilha.push("Terceiro");
+
+        System.out.println("Pilha: " + minhaPilha); 
+
+        String topo = minhaPilha.peek();
+        System.out.println("Elemento no topo: " + topo); /
+
+        String removido = minhaPilha.pop();
+        
+        System.out.println("Elemento removido: " + removido); 
+        System.out.println("Pilha após pop: " + minhaPilha); 
+
+        System.out.println("A pilha está vazia? " + minhaPilha.empty()); 
+    }
+}
+```
