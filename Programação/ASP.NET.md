@@ -1,0 +1,12 @@
+### Tipos de arquitetura 
+- WebForms
+	- Modelo orientado a página, onde cada solicitação HTTP é tratada como uma página separada. ==Gera arquivos html desnecessários.== 
+- MVC
+	- É um ==padrão de design== que divide uma aplicação web em três partes interconectadas: o Modelo, a Visão e o Controlador.
+	- Essa separação facilita a **organização, manutenção e teste da aplicação**, além de permitir o desenvolvimento paralelo de diferentes partes do sistema.
+- Web API
+	- Segue padrões de camadas, onde cada parte do projeto lida com responsabilidades específicas. 
+	- Promove a organização, a **manutenibilidade** e a **testabilidade** do código
+- SignalR
+	- É uma biblioteca que ==simplifica a criação de aplicações web em tempo real==, permitindo que o código do lado do servidor envie conteúdo para clientes de forma instantânea.
+---
