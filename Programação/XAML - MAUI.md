@@ -62,3 +62,27 @@
 </VerticalStackLayout>
 ```
 ![[Pasted image 20250718170419.png]]
+
+### Frame
+> Frame está obsoleto a partir do .NET 9
+- O **Frame** é um ==controle de UI== que serve principalmente para encapsular uma exibição ou um layout com uma borda que pode ser configurada com cores, sombras e entre outras opções.
+- Ele atua como um invólucro visual, permitindo agrupar e estilizar partes da sua interface de usuário. Como se fosse uma ==moldura para fotos==.
+```csharp
+<Frame BorderColor="Gray" // cor da borda
+       CornerRadius="5" // Propriedade que arredonda as bordas
+       Padding="8"
+       >
+    <StackLayout>
+        <Label Text="Card"
+               FontAttributes="Bold" // deixa em negrito
+               FontSize="14"/>
+        <BoxView HeightRequest="2" 
+                 BackgroundColor="Gray" 
+                 HorizontalOptions="Fill"/> // esse BoxView cria uma linha separadora
+        <Label Text="Isso é um teste "/>
+    </StackLayout>
+</Frame>
+```
+![[Pasted image 20250723131825.png]]
+### ListView
+
