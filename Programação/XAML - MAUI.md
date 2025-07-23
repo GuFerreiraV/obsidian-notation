@@ -85,4 +85,24 @@
 ```
 ![[Pasted image 20250723131825.png]]
 ### ListView
+> documentação completa: https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/listview?view=net-maui-8.0
+- Exibe uma lista vertical rolável com itens selecionáveis. Pelo **ListView**, podemos gerenciar a aparência da nossa lista, enquanto isso, para gerenciar a aparência dos itens dentro da lista, usaremos o **DataTemplate** que usa o **Cell** para exibir os itens.
+- ListView também inclui suporte para exibir headers e footers, dados agrupados e itens de menu de contexto.
+```csharp
+<ListView x:Name="lst_produtos" 
+      IsPullToRefreshEnabled="True"
+      Refreshing="lst_produtos_Refreshing"
+      ItemSelected="lst_produtos_ItemSelected">
+    <ListView.Header>
+	// Header da nossa ListView
+    </ListView.Header>
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+	// Conteúdo da nossa ListView
+            </ViewCell>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+</ListView>
 
+```
